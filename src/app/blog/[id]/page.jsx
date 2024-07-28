@@ -12,7 +12,7 @@ export default function BlogDetail({ params }) {
 
   const id = params.id;
   const { data: blog, error } = useSWR(
-    `http://localhost:3000/api/blog?id=${id}`,
+    `${process.env.NEXT_PUBLIC_API_URL}/blog?id=${id}`,
     fetcher
   );
 

@@ -12,13 +12,44 @@ export default function OurPartners() {
           width={100}
           height={60}
           className="lg:-mt-1 mt-3"
+          alt="Shoppe"
         />
-        <Image src="/images/partners/lazada.png" width={60} height={60} />
-        <Image src="/images/partners/jne.png" width={80} height={60} />
-        <Image src="/images/partners/mixue.png" width={80} height={60} />
-        <Image src="/images/partners/temp.png" width={80} height={60} />
-        <Image src="/images/partners/greendields.png" width={80} height={60} />
-        <Image src="/images/partners/yusen.png" width={80} height={60} />
+        <Image
+          src="/images/partners/lazada.png"
+          width={60}
+          height={60}
+          alt="Lazada"
+        />
+        <Image
+          src="/images/partners/jne.png"
+          width={80}
+          height={60}
+          alt="JNE"
+        />
+        <Image
+          src="/images/partners/mixue.png"
+          width={80}
+          height={60}
+          alt="Mixue"
+        />
+        <Image
+          src="/images/partners/temp.png"
+          width={80}
+          height={60}
+          alt="Temp"
+        />
+        <Image
+          src="/images/partners/greendields.png"
+          width={80}
+          height={60}
+          alt="Greendields"
+        />
+        <Image
+          src="/images/partners/yusen.png"
+          width={80}
+          height={60}
+          alt="Yusen"
+        />
       </div>
     </div>
   );

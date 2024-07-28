@@ -1,46 +1,11 @@
 import CardBlog from "./CardBlog";
 import useSWR from "swr";
 
-// const blogs = [
-//   {
-//     id: 1,
-//     title: "Mengapa Filsafat Stoik Tetap Relevan Hingga Saat Ini?",
-//     description:
-//       "Filsafat Stoik, yang berakar pada pemikiran Yunani kuno, telah memberikan panduan bagi banyak orang dalam menghadapi tantangan hidup...",
-//     image: "/images/banner/1.png",
-//     date: "2022-01-01",
-//   },
-//   {
-//     id: 2,
-//     title: "Stoikisme dan Seni Menghadapi Ketidakpastian",
-//     description:
-//       "Di dunia yang penuh ketidakpastian, Stoikisme menawarkan panduan untuk menghadapi tantangan hidup dengan tenang dan bijaksana...",
-//     image: "/images/banner/2.png",
-//     date: "2022-01-11",
-//   },
-//   {
-//     id: 3,
-//     title: "Mengapa Stoikisme Penting untuk Kesehatan Mental",
-//     description:
-//       "Filsafat Stoik telah terbukti bermanfaat untuk kesehatan mental, terutama dalam mengelola stres dan kecemasan...",
-//     image: "/images/banner/3.png",
-//     date: "2022-01-23",
-//   },
-//   {
-//     id: 4,
-//     title:
-//       "Stoikisme di Tempat Kerja: Meningkatkan Produktivitas dan Kepuasan Kerja",
-//     description: "Stoikisme bukan hanya relevan untuk kehidupan...",
-//     image: "/images/banner/4.png",
-//     date: "2022-02-27",
-//   },
-// ];
-
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function OurBlog() {
   const { data: blogs, error } = useSWR(
-    "http://localhost:3000/api/blog",
+    `${process.env.NEXT_PUBLIC_API_URL}/blog`,
     fetcher
   );
 

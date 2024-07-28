@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="#visi-misi">Visi & Misi</Link>
           <Link href="#tentang-kami">Tentang Kami</Link>
           <Link href="#blog">Blog</Link>
-          <Link href="#kontak">Armada Transportasi</Link>
+          <Link href="#transport">Armada Transportasi</Link>
         </div>
         <div className="hidden lg:block">
           <Link
@@ -107,7 +107,7 @@ export default function Navbar() {
               <Link href="#blog" onClick={() => setIsMenuOpen(false)}>
                 Blog
               </Link>
-              <Link href="#kontak" onClick={() => setIsMenuOpen(false)}>
+              <Link href="#transport" onClick={() => setIsMenuOpen(false)}>
                 Armada Transportasi
               </Link>
               <Link

@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedComponent from "@/utils/Motion";
 import Jumbotron from "@/components/Jumbotron";
 import OurPartners from "@/components/OurPartners";
 import VisionMission from "@/components/VisionMission";
@@ -13,7 +14,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <title>PT. Sadawira Yasa Utama</title>
+      <title>Sadawira Yasa Utama</title>
       <meta
         name="description"
         content="PT Sadawira Yasa Utama adalah perusahaan jasa Custom Clearance Ekspor Impor dan ekspedisi general cargo yang menyediakan layanan door-to-door ke seluruh Indonesia. Kami mengutamakan kepercayaan, kejujuran, dan ketepatan waktu untuk kepuasan pelanggan."
@@ -23,17 +24,33 @@ export default function Home() {
         content="Custom Clearance, Ekspor Impor, Ekspedisi General Cargo, Door-to-Door, Transportasi Darat, Transportasi Laut, PT Sadawira Yasa Utama, Layanan Ekspedisi, Kepercayaan, Ketepatan Waktu"
       />
 
-      <Navbar />
+      <AnimatedComponent>
+        <Navbar />
+      </AnimatedComponent>
       <main>
-        <Jumbotron />
-        <OurPartners />
-        <VisionMission />
-        <Security />
-        <AboutUs />
-        <Transport />
-        <OurBlog />
-        <Footer />
+        <AnimatedComponent>
+          <Jumbotron />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <OurPartners />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <VisionMission />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Security />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <AboutUs />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Transport />
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <OurBlog />
+        </AnimatedComponent>
       </main>
+      <Footer />
     </>
   );
 }

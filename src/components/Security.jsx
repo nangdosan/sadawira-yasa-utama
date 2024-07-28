@@ -6,10 +6,8 @@ export default function Security() {
     >
       <header className="text-center text-xs space-y-2 w-full md:w-8/12 mb-3 md:mb-10">
         <h3 className="text-sm text-amber-600">FASILITAS KEAMANAN</h3>
-        <h1 className="text-2xl md:text-3xl font-semibold font-playfair mb-4 text-center mx-10 md:mx-0">
-          Keamanan barang kiriman Anda adalah prioritas utama. Kami menyediakan
-          fasilitas keamanan canggih untuk memastikan setiap pengiriman tiba
-          dengan selamat dan tepat waktu
+        <h1 className="text-3xl font-semibold font-playfair mb-4 text-center mx-7 md:mx-0">
+          Keamanan barang kiriman Anda adalah prioritas utama.
         </h1>
       </header>
       <div className="px-7 md:px-0 flex flex-col md:flex-row items-center md:items-start lg:items-center justify-center space-x-0 md:space-x-10 space-y-7 md:space-y-0">

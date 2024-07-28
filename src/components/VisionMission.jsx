@@ -6,7 +6,7 @@ export default function VisionMission() {
       id="visi-misi"
       className="mt-32 w-full flex flex-col items-center justify-center bg-vintage py-20 space-y-5"
     >
-      <header className="text-center text-xs space-y-2 w-3/4 md:w-1/2 mb-5 md:mb-10">
+      <header className="text-center text-xs space-y-2 w-full md:w-1/2 mb-5 md:mb-10">
         <h3 className="text-amber-600 text-sm">JALAN CEPAT, TUJUAN TEPAT</h3>
         <h1 className="text-3xl md:text-4xl font-semibold font-playfair mb-4 text-center">
           Mengantar Harapan, Mengirim Kebahagiaan.

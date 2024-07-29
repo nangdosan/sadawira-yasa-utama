@@ -14,7 +14,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
+const storage = getStorage(app, "gs://next-blog-68cf1.appspot.com");
 const db = getFirestore(app);
 
 export { storage, db };

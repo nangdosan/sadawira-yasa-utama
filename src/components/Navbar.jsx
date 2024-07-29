@@ -37,14 +37,14 @@ export default function Navbar() {
         <Image src="/images/logo.png" alt="Logo" width={56} height={72} />
         <div className="hidden lg:flex space-x-7 tracking-wide text-sm text-gray-500 ml-14">
           <Link href="/">Beranda</Link>
-          <Link href="#visi-misi">Visi & Misi</Link>
-          <Link href="#tentang-kami">Tentang Kami</Link>
-          <Link href="#blog">Blog</Link>
-          <Link href="#transport">Armada Transportasi</Link>
+          <Link href="/#visi-misi">Visi & Misi</Link>
+          <Link href="/#tentang-kami">Tentang Kami</Link>
+          <Link href="/#blog">Blog</Link>
+          <Link href="/#transport">Armada Transportasi</Link>
         </div>
         <div className="hidden lg:block">
           <Link
-            href="#"
+            href="/"
             className="rounded-lg block w-40 py-3 text-center scale-75 bg-black text-white text-sm font-semibold"
           >
             Hubungi Kami
@@ -56,7 +56,7 @@ export default function Navbar() {
             className="focus:outline-none"
           >
             <svg
-              className="w-6 h-6 text-gray-700"
+              className="w-10 h-8 text-gray-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -80,7 +80,7 @@ export default function Navbar() {
               className="focus:outline-none mb-5 z-50 absolute top-4 right-4"
             >
               <svg
-                className="w-6 h-6 text-gray-500"
+                className="w-8 h-8 text-gray-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -98,20 +98,20 @@ export default function Navbar() {
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
                 Beranda
               </Link>
-              <Link href="#visi-misi" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#visi-misi" onClick={() => setIsMenuOpen(false)}>
                 Visi & Misi
               </Link>
-              <Link href="#tentang-kami" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#tentang-kami" onClick={() => setIsMenuOpen(false)}>
                 Tentang Kami
               </Link>
-              <Link href="#blog" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#blog" onClick={() => setIsMenuOpen(false)}>
                 Blog
               </Link>
-              <Link href="#transport" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#transport" onClick={() => setIsMenuOpen(false)}>
                 Armada Transportasi
               </Link>
               <Link
-                href="#"
+                href="/"
                 className="rounded-lg block w-full py-3 mt-10 shadow-xl text-center scale-75 bg-black text-white text-sm font-semibold"
               >
                 Hubungi Kami

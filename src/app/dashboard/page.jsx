@@ -28,7 +28,7 @@ export default function Dashboard() {
       [{ size: [] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       [{ list: "ordered" }, { list: "bullet" }],
-      ["link", "image"],
+      ["link"],
       ["clean"],
     ],
   };
@@ -45,7 +45,6 @@ export default function Dashboard() {
     "list",
     "bullet",
     "link",
-    "image",
   ];
 
   if (status === "unauthenticated") {
@@ -196,9 +195,10 @@ export default function Dashboard() {
               }
               modules={modules}
               formats={formats}
+              className="h-[50vh] overflow-y-auto"
             />
           </div>
-          <div className="mt-28 md:mt-20">
+          <div className="mt-10">
             <label htmlFor="isPublish">Publish?</label>
             <select
               name="isPublish"

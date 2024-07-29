@@ -23,7 +23,7 @@ export default function Jumbotron() {
           className="object-cover md:hidden"
         />
       </div>
-      <div className="absolute top-0 left-0 h-full flex flex-col justify-center items-start px-7 md:px-24 z-10 w-full md:w-10/12 lg:7/12">
+      <div className="absolute top-0 left-0 h-full flex flex-col justify-center items-start px-7 md:px-24 z-10 w-full md:w-6/12 lg:7/12">
         <h1 className="text-4xl font-bold font-playfair mb-4">
           Dari Darat ke Laut, Kami Menghubungkan Bisnis Anda ke Seluruh
           Indonesia

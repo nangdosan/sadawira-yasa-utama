@@ -44,7 +44,8 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:block">
           <Link
-            href="/"
+            href="https://wa.me/6281239848060"
+            target="_blank"
             className="rounded-lg block w-40 py-3 text-center scale-75 bg-black text-white text-sm font-semibold"
           >
             Hubungi Kami

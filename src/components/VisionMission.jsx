@@ -12,7 +12,7 @@ export default function VisionMission() {
           Mengantar Harapan, Mengirim Kebahagiaan.
         </h1>
       </header>
-      <div className="mx-7 md:mx-24 flex flex-col lg:flex-row items-start justify-evenly space-y-10 md:space-x-0">
+      <div className="mx-7 md:mx-24 flex flex-col lg:flex-row items-start justify-evenly space-y-10 lg:space-y-0 md:space-x-0">
         <div className="w-full lg:w-4/12">
           <Image src="/images/misi.png" width={400} height={300} />
           <h4 className="text-3xl font-playfair my-2">Misi</h4>

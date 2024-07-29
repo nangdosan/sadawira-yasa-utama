@@ -39,7 +39,7 @@ export default function Login() {
       <title>Login</title>
       <Navbar />
       <div className="w-full min-h-screen flex flex-col items-center justify-center">
-        <div className="w-3/4 md:w-1/4 bg-slate-100 flex flex-col items-center py-14 rounded-lg shadow-xl">
+        <div className="w-3/4 md:w-1/4 bg-white flex flex-col items-center py-14 rounded-lg shadow-xl">
           <h1 className="text-2xl font-semibold mb-7">LOGIN</h1>
           <form onSubmit={handleSubmit}>
             <div>

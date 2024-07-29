@@ -42,7 +42,8 @@ export default function AboutUs() {
       </div>
       <div className="">
         <Link
-          href="#"
+          href="https://wa.me/6282133357899"
+          target="_blank"
           className="rounded-lg block mt-5 shadow-xl w-40 py-3 text-center scale-90 hover:scale-95 transition-all duration-200 bg-black text-white text-sm font-semibold"
         >
           Hubungi Kami

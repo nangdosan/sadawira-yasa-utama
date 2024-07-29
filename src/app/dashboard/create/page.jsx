@@ -6,12 +6,20 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { storage } from "@/lib/firebaseConfig";
 import Aside from "@/components/Aside";
 import NavbarPhone from "@/components/NavbarPhone";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 export default function PostBlog() {
   const [content, setContent] = useState("");
   const [isAsideOpen, setIsAsideOpen] = useState(false);
+
+  const { status } = useSession();
+
+  if (status === "unauthenticated") {
+    useRouter().push("/login");
+  }
 
   const toggleAside = () => setIsAsideOpen(!isAsideOpen);
 

@@ -12,13 +12,14 @@ import { useRouter } from "next/navigation";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 export default function PostBlog() {
+  const router = useRouter();
   const [content, setContent] = useState("");
   const [isAsideOpen, setIsAsideOpen] = useState(false);
 
   const { status } = useSession();
 
   if (status === "unauthenticated") {
-    useRouter().push("/login");
+    router.push("/login");
   }
 
   const toggleAside = () => setIsAsideOpen(!isAsideOpen);

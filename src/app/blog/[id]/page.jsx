@@ -26,7 +26,7 @@ export default function BlogDetail({ params }) {
       <Navbar />
       <article className="mx-7 md:mx-24 py-20 flex flex-col justify-center items-center mt-5">
         <header className="mb-12 w-full md:w-3/4">
-          <h1 className="text-4xl font-playfair font-bold text-center mb-5 flex flex-col">
+          <h1 className="text-2xl md:text-4xl font-playfair font-bold text-center mb-5 flex flex-col">
             {data?.blog.title}
             <span className="text-sm text-gray-500 text-sans mt-5">
               {new Date(data?.blog.createdAt.seconds * 1000).toLocaleDateString(

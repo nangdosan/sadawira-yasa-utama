@@ -19,25 +19,41 @@ export default function BlogDetail({ params }) {
     return <Loading />;
   }
 
+  const { title, content, imageBanner, createdAt } = data?.blog;
+  const description = content.slice(0, 150).replace(/<\/?[^>]+(>|$)/g, ""); // Menghapus HTML tags
+  const formattedDate = new Date(createdAt.seconds * 1000).toLocaleDateString(
+    "id-ID",
+    { day: "numeric", month: "long", year: "numeric" }
+  );
+
   return (
     <>
-      <title>{data?.blog.title}</title>
-      <meta name="description" content={data?.blog.content.slice(0, 100)} />
+      <head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageBanner} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Sadawira Yasa Utama" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={imageBanner} />
+      </head>
       <Navbar />
       <article className="mx-7 md:mx-24 py-20 flex flex-col justify-center items-center mt-5">
         <header className="mb-12 w-full md:w-3/4">
           <h1 className="text-2xl md:text-4xl font-playfair font-bold text-center mb-5 flex flex-col">
-            {data?.blog.title}
+            {title}
             <span className="text-sm text-gray-500 text-sans mt-5">
-              {new Date(data?.blog.createdAt.seconds * 1000).toLocaleDateString(
-                "id-ID",
-                { day: "numeric", month: "long", year: "numeric" }
-              )}
+              {formattedDate}
             </span>
           </h1>
           <div className="relative flex justify-center mx-auto w-full h-64 md:h-96 mb-0 md:mb-5">
             <Image
-              src={data?.blog.imageBanner}
+              src={imageBanner}
               alt="Banner Image"
               fill
               className="object-cover"
@@ -46,7 +62,7 @@ export default function BlogDetail({ params }) {
         </header>
         <div
           className="prose md:prose-md lg:prose-lg text-justify w-full md:w-3/4"
-          dangerouslySetInnerHTML={{ __html: data?.blog.content }}
+          dangerouslySetInnerHTML={{ __html: content }}
         ></div>
       </article>
       <section className="mx-7 md:mx-24 py-20">

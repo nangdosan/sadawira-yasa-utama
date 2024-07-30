@@ -12,13 +12,18 @@ export default function Footer() {
             Jl. Patriot VII Cluster Grand Setiamekar No.1, Setiamekar, Kec.
             Tambun Sel., Bekasi Timur, Jawa Barat 17111
           </p>
-          <Image
-            src="/images/map.png"
-            width={300}
-            height={300}
-            alt="map"
-            className="mt-5 md:mt-10"
-          />
+          <Link
+            href="https://www.google.com/maps/dir//Jl.+Patriot+VII+Cluster+Grand+Setiamekar+No.1,+Setiamekar,+Kec.+Tambun+Sel.,+Bekasi+Timur,+Jawa+Barat+17111/@-6.247799,106.9526749,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e698f52dcd726fd:0x59db923427070071!2m2!1d107.0350768!2d-6.2478054?entry=ttu"
+            target="_blank"
+          >
+            <Image
+              src="/images/map.png"
+              width={300}
+              height={300}
+              alt="map"
+              className="mt-5 md:mt-10"
+            />
+          </Link>
         </div>
         <div className="mt-10 md:mt-0 w-full md:w-5/12 lg:w-3/12">
           <h3 className="text-2xl text-white mb-3">Kontak Kami</h3>
@@ -33,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <span className="text-center text-gray-400 block text-xs py-3">
-        @2024 PT Sadawira Yasa Utama
+        @2024 | Sadawira Yasa Utama
       </span>
     </footer>
   );

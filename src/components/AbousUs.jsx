@@ -14,7 +14,7 @@ export default function AboutUs() {
         </h1>
       </header>
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center text-justify space-x-0 md:space-x-10 space-y-10 md:space-y-0">
-        <p className="tracking-wider leading-6 w-10/12 md:w-5/12 lg:w-3/12">
+        <p className="prose w-10/12 md:w-5/12 lg:w-3/12">
           PT Sadawira Yasa Utama adalah perusahaan yang bergerak di bidang{" "}
           <span className="underline underline-offset-2">
             jasa Custom Clearance Ekspor Impor dan ekspedisi general cargo
@@ -27,7 +27,7 @@ export default function AboutUs() {
           proses kerja yang cepat dan fleksibel menjadi bagian integral dari
           pelayanan kami.
         </p>
-        <p className="tracking-wider leading-6 w-10/12 md:w-5/12 lg:w-3/12">
+        <p className="prose w-10/12 md:w-5/12 lg:w-3/12">
           Kami berkomitmen untuk memberikan pelayanan maksimal dengan ketepatan
           waktu sebagai standar kinerja, demi kepuasan pelanggan.{" "}
           <span className="underline underline-offset-2">

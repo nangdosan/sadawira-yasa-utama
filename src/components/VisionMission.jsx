@@ -16,7 +16,7 @@ export default function VisionMission() {
         <div className="w-full lg:w-4/12">
           <Image src="/images/misi.png" width={400} height={300} />
           <h4 className="text-3xl font-playfair my-2">Misi</h4>
-          <p className="leading-6 tracking-wider text-justify">
+          <p className="prose text-justify">
             PT Sadawira Yasa Utama berkomitmen memberikan solusi dan layanan
             terbaik bagi pelanggan dengan mempermudah proses pengiriman barang,
             menyediakan layanan cepat dan tepat waktu, siap kapan pun
@@ -28,7 +28,7 @@ export default function VisionMission() {
         <div className="w-full lg:w-4/12">
           <Image src="/images/visi.png" width={400} height={300} />
           <h4 className="text-3xl font-playfair my-2">Visi</h4>
-          <p className="leading-6 tracking-wider text-justify">
+          <p className="prose text-justify">
             Menjadi perusahaan Ekspedisi yang terbaik, utama, dan terpercaya.
           </p>
         </div>

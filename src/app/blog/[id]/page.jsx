@@ -8,7 +8,7 @@ import Loading from "./loading";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function BlogDetail({ params }) {
+export default async function BlogDetail({ params }) {
   const id = params.id;
   const { data, error: blogError } = useSWR(
     `${process.env.NEXT_PUBLIC_API_URL}/blog?id=${id}&random=3`,
@@ -20,7 +20,7 @@ export default function BlogDetail({ params }) {
   }
 
   const { title, content, imageBanner, createdAt } = data?.blog;
-  const description = content.slice(0, 150).replace(/<\/?[^>]+(>|$)/g, ""); // Menghapus HTML tags
+  const description = content.slice(0, 150).replace(/<\/?[^>]+(>|$)/g, "");
   const formattedDate = new Date(createdAt.seconds * 1000).toLocaleDateString(
     "id-ID",
     { day: "numeric", month: "long", year: "numeric" }

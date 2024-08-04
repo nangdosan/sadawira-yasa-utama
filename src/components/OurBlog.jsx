@@ -1,3 +1,5 @@
+"use client";
+
 import CardBlog from "./CardBlog";
 import useSWR from "swr";
 

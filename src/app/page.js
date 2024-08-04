@@ -14,7 +14,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <head>
+      {/* <head>
         <title>Sadawira Yasa Utama</title>
         <meta
           name="description"
@@ -40,7 +40,7 @@ export default function Home() {
           content="PT Sadawira Yasa Utama adalah perusahaan jasa Custom Clearance Ekspor Impor dan ekspedisi general cargo yang menyediakan layanan door-to-door ke seluruh Indonesia."
         />
         <meta name="twitter:image" content="/images/logo_full.png" />
-      </head>
+      </head> */}
       <AnimatedComponent>
         <Navbar />
       </AnimatedComponent>

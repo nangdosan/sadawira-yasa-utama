@@ -30,7 +30,7 @@ export default function PostBlog() {
       [{ size: [] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       [{ list: "ordered" }, { list: "bullet" }],
-      ["link", "image"],
+      ["link"],
       ["clean"],
     ],
   };
@@ -47,7 +47,6 @@ export default function PostBlog() {
     "list",
     "bullet",
     "link",
-    "image",
   ];
 
   const createHandler = async (e) => {

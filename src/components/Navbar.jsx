@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -112,7 +114,8 @@ export default function Navbar() {
                 Armada Transportasi
               </Link>
               <Link
-                href="/"
+                href="https://wa.me/6281239848060"
+                target="_blank"
                 className="rounded-lg block w-full py-3 mt-10 shadow-xl text-center scale-75 bg-black text-white text-sm font-semibold"
               >
                 Hubungi Kami

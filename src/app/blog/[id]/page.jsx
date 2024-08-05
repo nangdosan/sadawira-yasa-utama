@@ -20,7 +20,6 @@ export default async function BlogDetail({ params }) {
   }
 
   const { title, content, imageBanner, createdAt } = data?.blog;
-  const description = content.slice(0, 150).replace(/<\/?[^>]+(>|$)/g, "");
   const formattedDate = new Date(createdAt.seconds * 1000).toLocaleDateString(
     "id-ID",
     { day: "numeric", month: "long", year: "numeric" }
@@ -28,13 +27,6 @@ export default async function BlogDetail({ params }) {
 
   return (
     <>
-      <head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={imageBanner} />
-      </head>
       <Navbar />
       <article className="mx-7 md:mx-24 py-20 flex flex-col justify-center items-center mt-5">
         <header className="mb-12 w-full md:w-3/4">

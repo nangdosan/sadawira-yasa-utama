@@ -49,6 +49,7 @@ export default function AboutUs() {
             width={380}
             height={200}
             className="rounded-lg shadow-lg"
+            alt={`Gambar ${i + 1}`}
           />
         ))}
       </div>

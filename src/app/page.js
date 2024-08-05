@@ -14,6 +14,19 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
+      <head>
+        <title>Sadawira Yasa Utama</title>
+        <meta
+          name="description"
+          content="Jasa Custom Clearance Ekspor Impor dan Ekspedisi general cargo Door to Door di Indonesia"
+        />
+        <meta property="og:title" content="Sadawira Yasa Utama" />
+        <meta
+          property="og:description"
+          content="Jasa Custom Clearance Ekspor Impor dan Ekspedisi general cargo Door to Door di Indonesia"
+        />
+        <meta property="og:image" content="/images/logo.png" />
+      </head>
       <AnimatedComponent>
         <Navbar />
       </AnimatedComponent>

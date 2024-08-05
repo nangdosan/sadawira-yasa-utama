@@ -34,13 +34,6 @@ export default async function BlogDetail({ params }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={imageBanner} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sadawira Yasa Utama" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={imageBanner} />
       </head>
       <Navbar />
       <article className="mx-7 md:mx-24 py-20 flex flex-col justify-center items-center mt-5">

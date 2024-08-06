@@ -29,7 +29,7 @@ export default function Footer() {
           <h3 className="text-2xl text-white mb-3">Kontak Kami</h3>
           <div className="text-gray-500 text-sm flex flex-col space-y-1 mb-5">
             <Link href="https://wa.me/6281239848060">WhatsApp 1</Link>
-            <Link href="https://wa.me/6282133357899">WhatsApp 2</Link>
+            <Link href="https://wa.me/6281357117899">WhatsApp 2</Link>
             <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=sadawirayasautama.gmail.com">
               Gmail
             </Link>

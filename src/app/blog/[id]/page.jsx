@@ -29,14 +29,14 @@ export default async function BlogDetail({ params }) {
     <>
       <Navbar />
       <article className="mx-7 md:mx-24 py-20 flex flex-col justify-center items-center mt-5">
-        <header className="mb-12 w-full md:w-3/4">
+        <header className="my-12 w-full md:w-3/4">
           <h1 className="text-2xl md:text-4xl font-playfair font-bold text-center mb-5 flex flex-col">
             {title}
             <span className="text-sm text-gray-500 text-sans mt-5">
               {formattedDate}
             </span>
           </h1>
-          <div className="relative flex justify-center mx-auto w-full h-64 md:h-96 mb-0 md:mb-5">
+          <div className="relative w-full 2xl:w-8/12 flex justify-center mx-auto w-full h-64 md:h-96 mb-0 md:mb-5">
             <Image
               src={imageBanner}
               alt="Banner Image"

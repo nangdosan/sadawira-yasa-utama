@@ -16,7 +16,7 @@ export default function OurBlog() {
   }
 
   if (!blogs) {
-    return <div>Loading...</div>;
+    return <div className="text-center my-7">Loading...</div>;
   }
 
   return (
